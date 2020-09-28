@@ -25,6 +25,10 @@
 #[macro_use]
 extern crate sgx_tstd as std;
 
+#[cfg(target_arch="aarch64")]
+#[macro_use]
+extern crate std;
+
 use std::prelude::v1::*;
 
 /// Describes a CT log
